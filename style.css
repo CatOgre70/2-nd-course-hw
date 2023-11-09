@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.top {
+  max-width: 1440px;
+  height: 1024px;
+  background-image: url("img/top-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.top__header__h1 {
+  width: 789px;
+  padding-top: 217px;
+  padding-bottom: 32px;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.top__header__text {
+  width: 481px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 57px;
+}
+.top__header__text-select {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.top__header__button {
+  color: #FFF;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  width: 234.063px;
+  height: 48.603px;
+  border-radius: 30px;
+  background: #9C0332;
+  padding: 13px 74px 13px 74px;
+  transition: all, 0.3s;
+}
+.top__header__button:hover {
+  background: #EB443F;
+}
+
+.background1 {
+  background-image: url("img/game-background1.jpeg");
+}
+
+.background2 {
+  background-image: url("img/game-background2.jpeg");
+}
+
+.background3 {
+  background-image: url("img/game-background3.jpeg");
+}
+
+.content {
+  max-width: 1440px;
+  height: 556px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  background: #000915;
+}
+.content__game {
+  width: 370px;
+  height: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  border: 3px solid transparent;
+  border-radius: 19px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: all, 0.3s;
+}
+.content__game__name {
+  font-size: 1.5rem;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.content__game:hover {
+  border: 3px solid #44D2FF;
+}
+
+/*# sourceMappingURL=style.css.map */
