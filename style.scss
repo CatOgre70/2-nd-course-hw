@@ -51,8 +51,8 @@ body {
       font-weight: 400;
       line-height: normal;
       text-decoration: none;
-      width: 234.063px;
-      height: 48.603px;
+      width: 234px;
+      height: 48px;
       border-radius: 30px;
       background: $buttonBackgroundColorMain;
       padding: 13px 74px 13px 74px ;
@@ -110,3 +110,5 @@ body {
     }
   }
 }
+
+@import 'mobile';
