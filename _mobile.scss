@@ -1,0 +1,40 @@
+@import 'variables';
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+  }
+
+  .top {
+    max-width: 375px;
+    height: 735px;
+    &__header {
+      justify-content: center;
+      &__h1 {
+        max-width: 343px;
+        padding-top: 239px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__text {
+        max-width: 343px;
+        margin-bottom: $gap;
+        font-size: .875rem;
+        text-align: center;
+      }
+      &__button {
+        margin-left: 54px;
+        margin-right: 55px;
+      }
+    }
+  }
+
+  .content {
+    height: 1221px;
+    flex-wrap: wrap;
+    &__game {
+      width: 343px;
+    }
+  }
+}

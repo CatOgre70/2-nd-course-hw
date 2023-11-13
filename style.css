@@ -49,8 +49,8 @@ body {
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
-  width: 234.063px;
-  height: 48.603px;
+  width: 234px;
+  height: 48px;
   border-radius: 30px;
   background: #9C0332;
   padding: 13px 74px 13px 74px;
@@ -105,6 +105,43 @@ body {
 }
 .content__game:hover {
   border: 3px solid #44D2FF;
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    max-width: 375px;
+    height: 735px;
+  }
+  .top__header {
+    justify-content: center;
+  }
+  .top__header__h1 {
+    max-width: 343px;
+    padding-top: 239px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .top__header__text {
+    max-width: 343px;
+    margin-bottom: 32px;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .top__header__button {
+    margin-left: 54px;
+    margin-right: 55px;
+  }
+  .content {
+    height: 1221px;
+    flex-wrap: wrap;
+  }
+  .content__game {
+    width: 343px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
