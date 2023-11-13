@@ -5,11 +5,11 @@ a = 20;
 alert(a);
 
 // Задание 2
-let iPhoneIssueDate = 2007;
+const iPhoneIssueDate = 2007;
 console.log(iPhoneIssueDate);
 
 // Задание 3
-let jsCreator = 'Брендан Эйх (Brendan Eich)';
+const jsCreator = 'Брендан Эйх (Brendan Eich)';
 console.log(jsCreator);
 
 // Задание 4
@@ -42,7 +42,7 @@ alert(age);
 
 // Задание 9.0
 let user = {
-    name: `Иванов Иван`,
+    name: "Иванов Иван",
     age: 27,
     isAdmin: false
 }
