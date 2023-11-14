@@ -37,4 +37,29 @@
       width: 343px;
     }
   }
+
+  .game {
+    height: 654px;
+    flex-direction: column;
+    gap: $gap * 2;
+    justify-content: center;
+    align-items: center;
+    &__tBlock {
+      width: 343px;
+      justify-content: center;
+      align-items: center;
+      &__header {
+        font-size: 2rem;
+        text-align: center;
+      }
+      &__text {
+        font-size: 0.875rem;
+        text-align: center;
+      }
+    }
+    &__pBlock {
+      width: 343px;
+    }
+  }
+
 }

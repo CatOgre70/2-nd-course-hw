@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/hw-2.js"></script>
 </head>
 <body>
     <div class = "top center">
@@ -20,11 +19,11 @@
                 <span class = "top__header__text-select">поехали</span> и
                 <span class = "top__header__text-select">приступай</span>
             </p>
-            <a class = "top__header__button" href="#">Поехали!</a>
+            <a class = "top__header__button" href="#allGames">Поехали!</a>
         </header>
     </div>
-    <div class="content center">
-        <a class = "content__game background1" href="#">
+    <div class="content center" id = "allGames">
+        <a class = "content__game background1" href="#game1">
                 <span class = "content__game__name">
                     Игра 1
                 </span>
@@ -40,8 +39,19 @@
                 </span>
         </a>
     </div>
+    <div class="game center" id = "game1">
+        <div class = "game__tBlock">
+            <h2 class = "game__tBlock__header">Времена года!</h2>
+            <p class = "game__tBlock__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <a class = "game__tBlock__button" href="#">Играть!</a>
+        </div>
+        <div class="game__pBlock">
+            <img class="__picture" src="img/undraw_video_game_night_8h8m%201.svg" alt="">
+        </div>
+    </div>
     <footer class = "footer">
 
     </footer>
+    <script src="scripts/hw-3.js"></script>
 </body>
 </html>
