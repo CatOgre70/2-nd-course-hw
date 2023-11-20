@@ -43,7 +43,10 @@ body {
   line-height: 32px;
 }
 .top__header__button {
-  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +56,6 @@ body {
   height: 48px;
   border-radius: 30px;
   background: #9C0332;
-  padding: 13px 74px 13px 74px;
   transition: all, 0.3s;
 }
 .top__header__button:hover {
@@ -107,6 +109,62 @@ body {
   border: 3px solid #44D2FF;
 }
 
+.game {
+  height: 800px;
+  max-width: 1440px;
+  background: #000915;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.game__tBlock {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.game__tBlock__header {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.game__tBlock__text {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.game__tBlock__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  transition: all, 0.3s;
+}
+.game__tBlock__button:hover {
+  background: #EB443F;
+}
+.game__pBlock {
+  width: 435px;
+  height: 333px;
+}
+.game__pBlock__picture {
+  width: 100%;
+}
+
 @media (max-width: 375px) {
   .center {
     padding-left: 16px;
@@ -140,6 +198,29 @@ body {
     flex-wrap: wrap;
   }
   .content__game {
+    width: 343px;
+  }
+  .game {
+    height: 654px;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+  .game__tBlock {
+    width: 343px;
+    justify-content: center;
+    align-items: center;
+  }
+  .game__tBlock__header {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .game__tBlock__text {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .game__pBlock {
     width: 343px;
   }
 }
