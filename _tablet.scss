@@ -1,0 +1,22 @@
+@import 'variables';
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    height: 664px;
+  }
+
+}
+
+@media (max-width: 848px) {
+
+  .content {
+    height: 964px;
+  }
+
+}

@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   &__header {
     &__h1 {
-      width: 789px;
+      max-width: 789px;
       padding-top: 217px;
       padding-bottom: $gap;
       font-size: 4rem;
@@ -33,7 +33,7 @@ body {
       line-height: normal;
     }
     &__text {
-      width: 481px;
+      max-width: 481px;
       font-size: 1.125rem;
       font-weight: 300;
       line-height: 32px;
@@ -84,6 +84,7 @@ body {
   display: flex;
   gap: $gap;
   justify-content: center;
+  align-items: start;
   background: $backgroundColor;
   &__game {
     width: 370px;
@@ -113,16 +114,23 @@ body {
   }
 }
 
+.directionNormal {
+  flex-direction: row;
+}
+
+.directionOpposite {
+  flex-direction: row-reverse;
+}
+
 .game {
   height: 800px;
   max-width: 1440px;
   background: $backgroundColor;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   &__tBlock {
-    width: 584px;
+    max-width: 584px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -170,3 +178,4 @@ body {
 }
 
 @import 'mobile';
+@import 'tablet';
