@@ -78,6 +78,17 @@ body {
   background-image: url("img/game-background3.jpeg");
 }
 
+.background4 {
+  background-image: url("img/unsplash_iO0I6-mhDEY.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.backgroundBlack {
+  background: $backgroundColor;
+}
+
 .content {
   max-width: 1440px;
   height: 556px;
@@ -139,7 +150,6 @@ body {
 .game {
   height: 800px;
   max-width: 1440px;
-  background: $backgroundColor;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,6 +194,20 @@ body {
     &__picture {
       width: 100%;
     }
+  }
+}
+
+.footer {
+  height: 80px;
+  background: $backgroundColor;
+  max-width: 1440px;
+  &__copyright {
+    text-align: center;
+    color: $colorText;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 

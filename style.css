@@ -74,6 +74,17 @@ body {
   background-image: url("img/game-background3.jpeg");
 }
 
+.background4 {
+  background-image: url("img/unsplash_iO0I6-mhDEY.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.backgroundBlack {
+  background: #000915;
+}
+
 .content {
   max-width: 1440px;
   height: 556px;
@@ -135,7 +146,6 @@ body {
 .game {
   height: 800px;
   max-width: 1440px;
-  background: #000915;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,6 +193,20 @@ body {
   width: 100%;
 }
 
+.footer {
+  height: 80px;
+  background: #000915;
+  max-width: 1440px;
+}
+.footer__copyright {
+  text-align: center;
+  color: white;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media (max-width: 1024px) {
   .center {
     padding-left: 32px;
@@ -204,7 +228,7 @@ body {
     padding-right: 16px;
   }
   .top {
-    max-width: 375px;
+    max-width: 425px;
     height: 735px;
   }
   .top__header {
