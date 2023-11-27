@@ -33,30 +33,37 @@
                     Игра 2
                 </span>
         </a>
-        <a class = "content__game background3" href="#">
+        <a class = "content__game background3" href="#game3">
                 <span class = "content__game__name">
                     Игра 3
                 </span>
         </a>
     </div>
     <div class="game center directionNormal" id = "game1">
-        <div class = "game__tBlock">
+        <div class = "game__tBlock halfWidthTextBlock">
             <h2 class = "game__tBlock__header">Времена года!</h2>
             <p class = "game__tBlock__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <a onclick="game1()" class = "game__tBlock__button" href="">Играть!</a>
+            <button onclick="game1()" class = "game__tBlock__button">Играть!</button>
         </div>
         <div class="game__pBlock">
             <img class="game__pBlock__picture" src="img/undraw_video_game_night_8h8m%201.svg" alt="">
         </div>
     </div>
     <div class="game center directionOpposite" id = "game2">
-        <div class = "game__tBlock">
+        <div class = "game__tBlock halfWidthTextBlock">
             <h2 class = "game__tBlock__header">Запомни слова</h2>
             <p class = "game__tBlock__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить</p>
-            <a class = "game__tBlock__button" href="#">Играть!</a>
+            <button class = "game__tBlock__button" href="#">Играть!</button>
         </div>
         <div class="game__pBlock">
             <img class="game__pBlock__picture" src="img/undraw_gaming_re_cma2%201.svg" alt="">
+        </div>
+    </div>
+    <div class="game center" id = "game3">
+        <div class = "game__tBlock fullWidthTextBlock">
+            <h2 class = "game__tBlock__header">Игра в загадки</h2>
+            <p class = "game__tBlock__text textBlockTextCentered">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <button class = "game__tBlock__button" href="#">Играть!</button>
         </div>
     </div>
     <footer class = "footer">

@@ -122,6 +122,20 @@ body {
   flex-direction: row-reverse;
 }
 
+.fullWidthTextBlock {
+  max-width: 1200px;
+  align-items: center;
+}
+
+.halfWidthTextBlock {
+  max-width: 594px;
+  align-items: flex-start;
+}
+
+.textBlockTextCentered {
+  text-align: center;
+}
+
 .game {
   height: 800px;
   max-width: 1440px;
@@ -130,10 +144,8 @@ body {
   justify-content: space-between;
   align-items: center;
   &__tBlock {
-    max-width: 584px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 32px;
     &__header {
       font-size: 3rem;
@@ -148,9 +160,6 @@ body {
       line-height: 2rem;
     }
     &__button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: $colorText;
       font-size: 1.125rem;
       font-style: normal;
@@ -161,6 +170,7 @@ body {
       width: 234px;
       height: 48px;
       border-radius: 30px;
+      border-color: transparent;
       background: $buttonBackgroundColorMain;
       transition: all, .3s;
       &:hover {
@@ -177,5 +187,5 @@ body {
   }
 }
 
-@import 'mobile';
 @import 'tablet';
+@import 'mobile';
