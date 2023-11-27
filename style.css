@@ -265,7 +265,7 @@ body {
     align-items: center;
   }
   .game__tBlock {
-    width: 343px;
+    max-width: 343px;
     justify-content: center;
     align-items: center;
   }
@@ -278,7 +278,7 @@ body {
     text-align: center;
   }
   .game__pBlock {
-    width: 343px;
+    max-width: 343px;
   }
 }
 

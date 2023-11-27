@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
     &__tBlock {
-      width: 343px;
+      max-width: 343px;
       justify-content: center;
       align-items: center;
       &__header {
@@ -58,7 +58,7 @@
       }
     }
     &__pBlock {
-      width: 343px;
+      max-width: 343px;
     }
   }
 
