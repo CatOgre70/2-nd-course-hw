@@ -179,3 +179,71 @@ console.log(dateToRussianString(new Date()));
 // Поздравить пользователя, если он угадал оба элемента.
 // Если пользователь угадал только одно слово, сообщить: «Вы были близки к победе!»
 // Если не угадал ни одного элемента, сообщить, что пользователь ответил неверно.
+
+const game2 = () => {
+
+    const fruitArray = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+    const fruitArrayToDisplay = [];
+
+    for (let i = 0; i < fruitArray.length; i++) {
+        let j = -1;
+        while (j === -1 || fruitArray[j] === '') {
+            j = randomNumber2(0, fruitArray.length - 1);
+        }
+        fruitArrayToDisplay[i] = fruitArray[j];
+        fruitArray[j] = '';
+    }
+
+    alert(fruitArrayToDisplay.join(' '));
+    let userAnswer1 = String(prompt("Чему равнялся первый элемент массива?"));
+    let userAnswer1Correct = false;
+    if(fruitArrayToDisplay[0].toLowerCase() === userAnswer1.toLowerCase()) {
+        userAnswer1Correct = true;
+    }
+    let userAnswer2 = String(prompt("Чему равнялся последний элемент массива?"));
+    let userAnswer2Correct = false;
+    if(fruitArrayToDisplay[fruitArrayToDisplay.length-1].toLowerCase() === userAnswer2.toLowerCase()) {
+        userAnswer2Correct = true;
+    }
+    if(userAnswer1Correct && userAnswer2Correct) {
+        alert("Поздравляем! Вы угадали оба элемента!");
+    } else if (userAnswer1Correct || userAnswer2Correct){
+        alert("Вы были близки к победе!");
+    } else {
+        alert("Вы ответили неправильно!");
+    }
+}
+
+// Game 1
+
+const seasons = () => {
+    let month = Number(prompt('Введите номер месяца'));
+    if(Number.isNaN(month) || month < 1 || month > 12) {
+        return 'Вы ввели неправильное значение';
+    }
+    switch(month) {
+        case 12:
+        case 1:
+        case 2:
+            return 'Зима';
+        case 3:
+        case 4:
+        case 5:
+            return 'Весна';
+        case 6:
+        case 7:
+        case 8:
+            return 'Лето';
+        case 9:
+        case 10:
+        case 11:
+            return 'Осень';
+        default:
+            return 'Вы ввели неправильное значение';
+    }
+}
+
+const game1 = () => {
+    alert(seasons());
+}
